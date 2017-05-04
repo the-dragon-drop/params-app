@@ -40,6 +40,19 @@ class ParamsExamplesController < ApplicationController
       @answer_message = "right on the money!!!"
     end
   end
+
+  def segment_guess
+    @user_guess = params["turkey"].to_i
+    winning_number = 42
+
+    if winning_number < @user_guess
+      @answer_message = "too high."
+    elsif winning_number > @user_guess
+      @answer_message = "too low."
+    else 
+      @answer_message = "right on the money!!!"
+    end
+  end
 end
 
 

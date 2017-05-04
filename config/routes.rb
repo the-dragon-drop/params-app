@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   get '/name' => 'params_examples#name'
   get '/guess' => 'params_examples#guess'
+  get '/segment_guess/:turkey' => 'params_examples#segment_guess'
 end
 
