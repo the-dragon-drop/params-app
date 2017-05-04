@@ -8,6 +8,13 @@ class ParamsExamplesController < ApplicationController
     @message = params["this_is_a_key"]
   end
 
+  def form_show
+    
+  end
+
+  def form_send
+    @message = params["form_message"]
+  end
 
 
 
